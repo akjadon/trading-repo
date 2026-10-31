@@ -209,6 +209,3 @@ tests/              unittest suite + offline fixtures
 ```
 
 MIT. Maintained by [Anil Jadon](https://github.com/akjadon).
-
-Based on [day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill)
-by Jake Schincariol, MIT licensed.

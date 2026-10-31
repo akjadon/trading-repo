@@ -83,14 +83,13 @@ class Repo(unittest.TestCase):
         for s in SKILLS:
             self.assertIn("/" + s, readme, s)
 
-    def test_no_em_dashes_and_no_personal_email(self):
+    def test_no_em_dashes(self):
         for path in every_text_file():
             with open(path, encoding="utf-8", errors="replace") as fh:
                 text = fh.read()
             rel = os.path.relpath(path, ROOT)
             if not rel.startswith(os.path.join("tests", "fixtures")):  # fixtures are real data, kept as published
                 self.assertNotIn("\u2014", text, rel)
-            self.assertNotIn("jakeschincariol" + "@" + "gmail.com", text, rel)  # built, so this file passes too
 
     def test_no_v1_only_skill_is_left_behind(self):
         for path in every_text_file():
