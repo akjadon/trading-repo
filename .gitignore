@@ -1,0 +1,5 @@
+# Local run data written by the skills (your plans, orders, config)
+trader/
+
+__pycache__/
+*.pyc
