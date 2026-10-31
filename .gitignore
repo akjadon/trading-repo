@@ -3,3 +3,6 @@ trader/
 
 __pycache__/
 *.pyc
+
+# Local copy of the skills for running them in Claude Code (see README)
+.claude/skills/

@@ -16,17 +16,12 @@ past day the same setup fired, and tells you the honest odds.
 And no trade goes through until you say yes. Nothing in this pack can place
 an order on its own. Paper trading is the default.
 
-> **Looking for the original Trader skill?** Copy an investor's 13F, the
-> stock screener, tax lots and rebalancing live in
-> [github.com/Jakeschincariol/trader-skill](https://github.com/Jakeschincariol/trader-skill).
-> This repo is its day-trading sequel: the Trader skill v2.
-
 ## Install
 
 Paste this into Claude:
 
 ```
-https://github.com/Jakeschincariol/day-trader-skill
+https://github.com/akjadon/trading-repo
 
 install skill
 ```
@@ -34,17 +29,17 @@ install skill
 Or as a plugin, in Claude Code:
 
 ```
-/plugin marketplace add Jakeschincariol/day-trader-skill
-/plugin install day-trader-skill@day-trader-skill
+/plugin marketplace add akjadon/trading-repo
+/plugin install trading-repo@trading-repo
 ```
 
 Claude Code namespaces plugin skills, so installed as a plugin they show up as
-`/day-trader-skill:trader-scanner` and so on. Copy the folders instead if you want
+`/trading-repo:trader-scanner` and so on. Copy the folders instead if you want
 plain `/trader-scanner`:
 
 ```bash
-git clone https://github.com/Jakeschincariol/day-trader-skill.git
-cp -r day-trader-skill/trader-* ~/.claude/skills/
+git clone https://github.com/akjadon/trading-repo.git
+cp -r trading-repo/trader-* ~/.claude/skills/
 ```
 
 Project-local instead of global: copy the same folders into your repo's
@@ -213,4 +208,7 @@ trader-pelosi/      SKILL.md, ptr.py
 tests/              unittest suite + offline fixtures
 ```
 
-MIT. Made by [Jake Schincariol](https://opusjake.ai).
+MIT. Maintained by [Anil Jadon](https://github.com/akjadon).
+
+Based on [day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill)
+by Jake Schincariol, MIT licensed.

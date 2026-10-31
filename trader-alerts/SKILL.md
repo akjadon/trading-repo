@@ -74,7 +74,7 @@ close, so "flat by close" at 15:55 rings at 12:55 on those days.
 - `yahoo` (default): `query2.finance.yahoo.com/v8/finance/chart/<TICKER>`, an
   unofficial free JSON endpoint, one request per ticker, half a second apart.
   On a 429 it waits and tries once more; on a 429 or a 5xx after that it
-  tries `query1`. It identifies itself as `day-trader-skill/2.0`.
+  tries `query1`. It identifies itself as `trading-repo/2.0`.
 - `stooq`: `stooq.com/q/l/?s=tsla.us&f=sd2t2ohlcv&h&e=csv`, Stooq's free CSV.
   It answered 404 on 2026-10-13; the parser stays for when it is back.
 - Free quotes are unofficial, delayed and can lag. They are fine for alerts
